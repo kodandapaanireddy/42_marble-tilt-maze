@@ -97,3 +97,39 @@ Submission is only the following three things:
 - [] A 10-second video of gameplay **before** your changes, showing the bug/broken behavior
 - [] A 10-second video of gameplay **after** your changes, showing the bug fixed and the new features working
 - [] The Chat/LLM used page link, with the complete chat history
+
+
+
+---
+
+## My Lab 4 Submission
+
+**Name:** B. Kodandapaani Reddy  |  **SRN:**  PES2UG24CS108
+
+### Changes made (with AI assistance)
+
+| Task | What I did |
+|------|-----------|
+| 1. Collision | Replaced the collision check with circle-vs-rectangle collision (closest point on the rect), so bounces only happen on real contact, including at corners. |
+| 2. Game over | Added PLAYING / GAME_OVER states and an in-window overlay showing "You Win!" with the finish time, or "Time's Up!". |
+| 3. Replay | Added a menu after the end screen: 1 Easy, 2 Medium, 3 Hard, Q/Esc to quit. Difficulty changes tilt strength, friction, and time limit. |
+| 4. Sound | Added generated sound effects for wall bounces, reaching the goal, and timer expiry (no external audio files). |
+
+### How to run
+
+    pip install -r requirements.txt
+    python main.py
+
+On Python 3.14, `pygame` may fail to build. Use `pip install pygame-ce` instead.
+
+### Controls
+
+- Move the mouse: tilt the maze (the marble accelerates toward the cursor)
+- After a round: 1 / 2 / 3 to pick a difficulty, Q or Esc to quit
+
+### Files in this submission
+
+- `Lab-4/before.mp4`: gameplay before changes
+- `Lab-4/after.mp4`: gameplay after changes
+- `Lab-4/chat_history.pdf`: full AI chat history
+- Chat link: https://claude.ai/share/2df44d7b-aea3-4bb5-b222-1b8e346d8457
